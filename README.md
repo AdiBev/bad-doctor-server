@@ -20,3 +20,5 @@ const graphQLCLient = new GraphQLClient(endpoint, {
 This project uses [graphql-request](https://www.npmjs.com/package/graphql-request) package to perform graphql queries/mutations.
 Currently there are only added queries in the project, but users can add mutations as well.
 
+
+#### If you would like to add new features/configs to this repo please add a PR to ```graphql-api-develop``` branch
