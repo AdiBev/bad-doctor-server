@@ -5,11 +5,14 @@ const searchQuery = require("./query");
 
 router.get("/", async (req, res) => {
   const { limit, term, location } = req.query;
+
+  ///Graphql query variables
   const variables = {
     term,
     location,
     limit: parseInt(limit),
   };
+
   try {
     const data = await graphQLCLient.request(searchQuery, variables);
     res.send(JSON.stringify(data));
