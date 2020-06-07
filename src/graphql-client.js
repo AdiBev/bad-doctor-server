@@ -1,3 +1,4 @@
+///Graphql client configs
 const client = require("graphql-request");
 const { GraphQLClient } = client;
 
