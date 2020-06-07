@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
     const data = await graphQLCLient.request(searchQuery, variables);
     res.send(JSON.stringify(data));
   } catch (err) {
-    res.status(500).send("Error", err.message);
+    res.status(500).send(err);
   }
 });
 
