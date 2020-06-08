@@ -2,7 +2,6 @@
 const searchQuery = `
     query searchPlaces($term: String, $location: String, $limit: Int, $offset: Int) {
         search(term: $term, location: $location, limit: $limit, offset: $offset) {
-          total
           business {
             name
             phone
@@ -30,4 +29,14 @@ const searchQuery = `
     }
       `;
 
+const searchTotalQuery = `
+ query searchTotal($term: String, $location: String, $limit: Int, $offset: Int){
+   search(term: $term, location: $location, limit: $limit, offset: $offset) {
+     total
+   }
+ }
+ `;
+
 module.exports = searchQuery;
+
+module.exports = searchTotalQuery;
