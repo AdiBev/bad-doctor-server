@@ -4,13 +4,14 @@ const graphQLCLient = require("./graphql-client");
 const searchQuery = require("./query");
 
 router.get("/", async (req, res) => {
-  const { limit, term, location } = req.query;
+  const { limit, term, location, offset } = req.query;
 
   ///Graphql query variables
   const variables = {
     term,
     location,
     limit: parseInt(limit),
+    offset: parseInt(offset),
   };
 
   try {
