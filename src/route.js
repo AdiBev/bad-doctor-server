@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const graphQLCLient = require("./graphql-client");
-const searchQuery = require("./query");
-const searchTotalQuery = require("./query");
+const queries = require("./query");
+
+const { searchQuery, searchTotalQuery } = queries;
 
 router.get("/", async (req, res) => {
   const { limit, term, location, offset } = req.query;
