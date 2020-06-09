@@ -37,6 +37,4 @@ const searchTotalQuery = `
  }
  `;
 
-module.exports = searchQuery;
-
-module.exports = searchTotalQuery;
+module.exports = { searchQuery, searchTotalQuery };
