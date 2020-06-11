@@ -7,6 +7,10 @@ const searchQuery = `
             phone
             id
             price
+            coordinates{
+              latitude
+              longitude
+            }
             location {
               address1
               city
