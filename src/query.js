@@ -23,8 +23,10 @@ const searchQuery = `
             photos
             reviews {
               rating
+              url
               user {
                 name
+                image_url
               }
               text
             }
