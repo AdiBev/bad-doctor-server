@@ -22,6 +22,7 @@ const searchQuery = `
             url
             photos
             reviews {
+              time_created
               rating
               url
               user {
